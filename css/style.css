@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Header starts */
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+}
+.header h3{
+    float: left;
+    margin-top: 14px;
+}
+.header .grey-color{
+    color: rgb(112, 86, 86);
+}
+.header a{
+    font-size: 15px;
+    color: rgb(189, 169, 169);
+    text-decoration: none;
+}
+.header ul{
+    float: right;
+}
+.header ul li{
+    float: left;
+    list-style-type: none;
+    margin-right: 50px;
+    font-family: 'PT Sans', sans-serif;
+    color: rgb(169, 135, 135);
+}
+.nav{
+    float: right;
+    display: none;
+}
+.header{
+    position: relative;
+}
+ul{
+    display: block;
+}
+
+/* Header ends */
+
+/* Banner-top starts */
+.banner-top{
+    width: 100%;
+    height: 720px;
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    /* border: 2px solid yellow; */
+}
+.banner-top .fixed-width h2 {
+    margin-top: 0px;
+    padding-top: 35px;
+    font-size: 18px;
+    color: rgb(233, 221, 221);
+}
+.fixed-width{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.btn-more{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(192, 8, 85);
+    font-size: 15px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+.btn-more a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.banner-top h2{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 35px;
+}
+.threebox .box{
+    width: 30%;
+    float: left;
+    background-color: #fff;
+}
+.threebox{
+    /* border: 2px solid rgb(44, 234, 22); */
+}
+.box p{
+    margin: 25px;
+    font-size: 15px;
+    color: gray;
+    line-height: 22px;
+}
+.box img{
+    width: 100%;
+    height: 130px;
+}
+.threebox  .left{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.banner h2{
+    margin-top: 70px;
+}
+
+/* Banner-top Ends */
+
+/* Banner lower starts */
+.banner-lower{
+    width: 100%;
+    height: 720px;
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    /* border: 2px solid coral; */
+}
+.text{
+    width: 42%;
+    /* border: 2px solid greenyellow; */
+    float: left;
+    margin-left: 6%;
+    text-align: left;
+    color: #fff;
+    margin-top: 40px;
+}
+.text .fa{
+    padding: 5px;
+}
+.text p{
+    padding-left:35px;
+    color: rgb(232, 215, 215);
+}
+.banner-lower .threebox{
+    position: relative;
+    top: -60px;
+}
+
+.btn-banner a{
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Banner-lower Ends */
+
+/* Form-area starts */
+.form-area{
+    width: 100%;
+    background-color: rgb(223, 12, 125);
+    text-align: center;
+    color: #fff;
+    /* border: 2px solid green; */
+}
+
+form input{
+    width: 400px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    
+}
+.form-area h1{
+    padding-top: 70px;
+    margin-bottom: 0;
+}
+.form-area p{
+    font-size: 15px;
+    color: rgb(232, 215, 215);
+    padding-bottom: 30px;
+    margin-top: 0px;
+}
+#submit{
+    width: 100px;
+    margin-bottom: 40px;
+}
+/* Form-area Ends */
+
+/* footer starts */
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+}
+.footer p{
+    padding-top: 40px;
+    margin-top: 0px;
+}
+.footer .fa{
+    font-size: 25px;
+    border-radius: 30%;
+    padding: 15px;
+}
+/* footer ends */
+
+/* Media Query starts */
+
+@media (max-width:1024px){
+    .banner-lower .threebox{
+        position: relative;
+        top: -30px;
+    }
+    .btn-more{
+        width: 120px;
+        height: 30px;
+    }
+    .btn-more a{
+        font-size: 12px;
+    }
+    .banner-top .fixed-width h2 {
+        font-size: 15px;
+    }
+    .text h2{
+        font-size: 20px;
+    }
+    .form-area h1{
+        font-size: 25px;
+
+     
+    }
+
+
+@media (max-width:992px){
+    ul{
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding-left: 0;
+    } 
+    .nav{
+        display: block;
+        position: relative;
+        top:25px
+        
+    }
+    .header{
+        height: 100px;
+    }
+    .header h3{
+        margin-top: 25px;
+    }
+    .nav .fa{
+        font-size: 20px;
+        background: none;
+        border: 0;
+        
+    }
+    .banner-lower .threebox{
+        position: relative;
+        top: -30px;
+    }
+    .threebox .box{
+        width: 100%;
+        clear: both;
+        margin-bottom: 10px;
+    }
+    .threebox{
+        width: 100%;
+    }
+    .box img{
+        width: 70%;
+        height: auto;
+    }
+    .threebox  .left{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .banner-top{
+        height:1400px ;
+    }
+    .banner-lower{
+        height:1600px ;
+    }
+    button.nav {
+        margin-right: 10px;
+    }
+    img {
+        margin-top: 10px;
+    }
+    .banner-lower {
+        height: 1460px;
+    }
+}
+@media (max-width:768px){
+    .banner-lower .threebox{
+        position: relative;
+        top: -50px;
+    }
+    .text{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .banner-lower {
+        height: 1590px;
+    }
+}
+@media (max-width:600px){
+    .banner-lower .threebox{
+        position: relative;
+        top: -60px;
+    }
+    .banner-top {
+        height: 1300px;
+    }
+    .banner-lower {
+        height: 1660px;
+    }
+    .box img{
+        width: 100%;
+    }
+    img {
+        margin-top: 0px;
+    }
+    .text{
+        margin-left: 0px;
+    }
+    h3 {
+        margin-left: 25;
+        font-size: 18px;
+    }
+    .header ul{
+        margin-left: 20px;
+        border-top: 2px solid silver;
+        width: 95%;
+    }
+    .header ul li{
+        float: none;
+        padding: 8px;
+        
+    }
+    .header{
+        height: 220px;
+    }
+    .banner-top .fixed-width h2 {
+        font-size: 11px;
+    }
+    .btn-more{
+        width: 100px;
+        height: 25px;
+    }
+    .btn-more a{
+        font-size: 10px;
+    }
+    .form-area h1 {
+        font-size: 20px;
+        margin-top: 0px;
+        padding-top: 50px;
+    }
+    .form-area p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+@media (max-width:360px){
+    h3 {
+        font-size: 12px;
+    }
+    button.nav {
+        margin-right: 7px;
+        position: relative;
+        top: 16px;
+    }
+    .header ul {
+        width: 92%;
+    }
+    .box p {
+        font-size: 11px;
+    }
+    .banner-top {
+        height: 1220px;
+    }
+    .text h2 {
+        font-size: 19px;
+    }
+    .banner-lower {
+        height: 1600px;
+    }
+    .form-area h1 {
+        font-size: 14px;
+        padding-top: 38px;
+    }
+    .form-area p{
+        font-size: 10px;
+    }
+    #user{
+        width: 190px;
+    }
+    #pass{
+        width: 190px;
+    }
+    #cpass{
+        width: 190px;
+    }
+    #mnum{
+        width: 190px;
+    }
+    #email{
+        width: 190px;
+    }
+    #submit{
+        width: 80px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .footer .fa{
+        font-size: 15px;
+    }
+}
+   
